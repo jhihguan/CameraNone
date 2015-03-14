@@ -11,14 +11,10 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong)       AVCaptureSession            * session;
-
-@property (nonatomic, strong)       AVCaptureDeviceInput        * videoInput;
-
-@property (nonatomic, strong)       AVCaptureStillImageOutput   * stillImageOutput;
-
-@property (nonatomic, strong)       AVCaptureVideoPreviewLayer  * previewLayer;
-
+@property (nonatomic, strong) AVCaptureSession *session;
+@property (nonatomic, strong) AVCaptureDeviceInput *videoInput;
+@property (nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 
 // for scaling
 @property (nonatomic) CGFloat lastScale;
