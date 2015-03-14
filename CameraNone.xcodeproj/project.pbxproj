@@ -14,6 +14,7 @@
 		6A2FE1061AB1DC5700C98F31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2FE1051AB1DC5700C98F31 /* Images.xcassets */; };
 		6A2FE1091AB1DC5700C98F31 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A2FE1071AB1DC5700C98F31 /* LaunchScreen.xib */; };
 		6A2FE1151AB1DC5700C98F31 /* CameraNoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2FE1141AB1DC5700C98F31 /* CameraNoneTests.m */; };
+		6A567D411AB447C500571DFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A567D401AB447C500571DFA /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6A2FE10E1AB1DC5700C98F31 /* CameraNoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraNoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2FE1131AB1DC5700C98F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2FE1141AB1DC5700C98F31 /* CameraNoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraNoneTests.m; sourceTree = "<group>"; };
+		6A567D401AB447C500571DFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A567D411AB447C500571DFA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625A1F4EF20643DE6E6ADB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A567D401AB447C500571DFA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A2FE0EC1AB1DC5600C98F31 = {
 			isa = PBXGroup;
 			children = (
 				6A2FE0F71AB1DC5700C98F31 /* CameraNone */,
 				6A2FE1111AB1DC5700C98F31 /* CameraNoneTests */,
 				6A2FE0F61AB1DC5700C98F31 /* Products */,
+				625A1F4EF20643DE6E6ADB05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,9 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jhihguan Wang (3D4FGN23KH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jhihguan Wang (4VW4B88277)";
 				INFOPLIST_FILE = CameraNone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1a617e6-ad4b-4ee7-aeb1-fc1fc16c9c32";
 			};
 			name = Debug;
 		};
@@ -353,9 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jhihguan Wang (3D4FGN23KH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jhihguan Wang (4VW4B88277)";
 				INFOPLIST_FILE = CameraNone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00f3b216-af69-429d-b793-f1396110d8dc";
 			};
 			name = Release;
 		};
@@ -412,6 +432,7 @@
 				6A2FE11A1AB1DC5700C98F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A2FE11B1AB1DC5700C98F31 /* Build configuration list for PBXNativeTarget "CameraNoneTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				6A2FE11D1AB1DC5700C98F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
